@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <!--<div class="">
     <section>
       <v-parallax :src="imgLink.firstView" height="600">
         <v-layout column align-center justify-center class="white--text">
@@ -14,11 +14,26 @@
         </v-layout>
       </v-parallax>
     </section>
-    <v-row>
-      <v-col xs="11">
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-container>
+      <v-row>
+        <v-col xs="11">
+          <v-card>
+            <v-card-title>mission</v-card-title>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>-->
+  <div class="test">
+    <v-container>
+      <v-row>
+        <v-col>
+          <v-card><v-card-title>Home vue</v-card-title><v-card-text>card text</v-card-text></v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+
 </template>
 
 <script>
@@ -27,9 +42,7 @@
 
 export default {
   name: 'Home',
-  components: {
 
-  },
   data: function () {
     return {
       imgLink: {

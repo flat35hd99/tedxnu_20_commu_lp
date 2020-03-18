@@ -8,7 +8,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    meta: {title: 'TODOアプリ　一覧画面', desc: 'TODOアプリの一覧画面です。TODOのリストを確認できます。'},
+    meta: {title: 'TEDxNagoyaU 団体情報', desc: 'TEDxNagoyaUは名古屋大学を中心に活動する、TEDxイベント運営団体です。毎年夏にTEDxNagoyaUを開催しています。'},
     component: Home
   },
   /*{
