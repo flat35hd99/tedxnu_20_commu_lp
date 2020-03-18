@@ -14,6 +14,10 @@
         </v-layout>
       </v-parallax>
     </section>
+    <v-row>
+      <v-col xs="11">
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
