@@ -2,5 +2,7 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  'publicPath': '/tedxnu_20_commu_lp/'
+  publicPath: process.env.NODE_ENV === '/tedxnu_20_commu_lp/'
+    ? '/tedxnu_20_commu_lp'
+    : './'
 }
