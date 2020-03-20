@@ -40,13 +40,18 @@
     <v-parallax :src="imgLink.missionView">
       <v-container>
         <v-row >
-          <v-col class="" xs="12" sm="12" md="6" lg="4" >
+          <v-col class="" xs="12" sm="6" md="4">
             <v-card>
-              <v-img :src="imgLink.cardA" alt="">
-                <v-card-title>なんか画質悪いのは次のデプロイで修正するね</v-card-title>
-                <v-card-text>これは複数の情報を一斉に見せるのに適していそうだね！具体的には協賛プランを表示したり、協賛のメリットを示すのに適しているのではないかな？</v-card-text>
-              </v-img>
-
+              <v-img :src="imgLink.cardA" alt=""></v-img>
+              <v-card-title>画質改善。イベント紹介する？</v-card-title>
+              <v-card-text>これは複数の情報を一斉に見せるのに適していそうだね！具体的には協賛プランを表示したり、協賛のメリットを示すのに適しているのではないかな？</v-card-text>
+            </v-card>
+          </v-col>
+          <v-col class="" xs="12" sm="6" md="4">
+            <v-card>
+              <v-img :src="imgLink.cardA" alt=""></v-img>
+              <v-card-title>画質改善。イベント紹介する？</v-card-title>
+              <v-card-text>これは複数の情報を一斉に見せるのに適していそうだね！具体的には協賛プランを表示したり、協賛のメリットを示すのに適しているのではないかな？</v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -54,14 +59,14 @@
     </v-parallax>
 
 
-    <v-parallax :src="imgLink.meritView">
+    <v-parallax :src="imgLink.firstView">
       <v-container>
-        <v-row align="center" justify="center">
+        <v-row>
           <v-col cols="12" class="text-center">
             <h1 class="display-1 font-weight-thin mb-4">メリット</h1>
           </v-col>
         </v-row>
-        <v-row justify="center">
+        <v-row>
           <v-col class="" xs="12" sm="12" md="6">
             <v-card>
               <v-card-title>メリットの紹介①</v-card-title>
@@ -117,7 +122,9 @@
       </v-container>
     </v-parallax>
 
-
+    <div>
+      <plan-session></plan-session>
+    </div>
 
 
     <v-container>
@@ -142,10 +149,13 @@
 
 <script>
 // @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
+import PlanSession from '@/components/PlanSession.vue'
 
 export default {
   name: 'Home',
+  components: {
+    PlanSession
+  },
 
   data: function () {
     return {
@@ -155,9 +165,9 @@ export default {
         visionView: "https://cdn.vuetifyjs.com/images/parallax/material.jpg",
         planView: "https://superdevresources.com/wp-content/uploads/2016/02/40-backgrounds-material.jpg",//danger!!!!!!!!!!!!!
         meritView: "https://superdevresources.com/wp-content/uploads/2016/02/5-backgrounds.jpg",//danger!!!!!!!!!
-        cardA: "https://live.staticflickr.com/65535/48254749996_95807209b1_s.jpg",
-        cardB: "https://live.staticflickr.com/65535/48247052851_1efa58fde2_s.jpg",
-        cardC: "https://live.staticflickr.com/65535/48247052991_d905b95448_s.jpg",
+        cardA: "https://live.staticflickr.com/65535/48254749996_95807209b1_c.jpg",
+        cardB: "https://live.staticflickr.com/65535/48247052851_1efa58fde2_c.jpg",
+        cardC: "https://live.staticflickr.com/65535/48247052991_d905b95448_c.jpg",
       }
     }
   }
