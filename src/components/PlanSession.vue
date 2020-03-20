@@ -1,5 +1,8 @@
 <template >
   <v-container>
+    <v-row><v-col>
+      <h1 class="display-1 font-weight-thin mb-4">協賛プラン</h1>
+    </v-col></v-row>
     <v-row>
       <v-col v-for="item in planList" :key="item.title" xs="12" sm="6" md="4">
         <v-card>
