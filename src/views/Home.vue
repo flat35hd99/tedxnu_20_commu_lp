@@ -25,6 +25,7 @@
           <v-col class="text-center" cols="12">
             <h1 class="display-1 font-weight-thin mb-4">Mission</h1>
             <h4 class="subheading">ありたい姿に向かって挑戦し、ひとりひとりが楽しく生きる社会</h4>
+            <p></p>
             <p>"should" (しなければならない) があふれる社会から、"want" があふれる社会へ。</p>
           </v-col>
         </v-row>
@@ -37,6 +38,7 @@
         <v-col class="text-center" cols="12">
           <h1 class="display-1 font-weight-thin mb-4">Vision</h1>
           <h4 class="subheading">あらゆる人と人、アイデアとアイデアをつなげ、挑戦するに足る高いエネルギーを生み出す</h4>
+          <p></p>
           <p class="subheading">新しいアイデアに触れ、様々な人と交流することで新たな自分を見つけ、一歩踏み出すエネルギーを創出する。</p>
         </v-col>
       </v-row>
