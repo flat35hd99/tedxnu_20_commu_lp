@@ -54,6 +54,10 @@
       <plan-session></plan-session>
     </div>
 
+    <div class="">
+      <past-sponsor-session></past-sponsor-session>
+    </div>
+
     <v-container>
       <v-row>
         <v-col xs="11">
@@ -102,6 +106,7 @@
 import PlanSession from '@/components/PlanSession.vue'
 import TedxNagoyau from '@/components/TedxNagoyau.vue'
 import PleaseSponsor from '@/components/PleaseSponsor.vue'
+import PastSponsorSession from '@/components/PastSponsorSession.vue'
 import Contact from '@/components/Contact.vue'
 
 export default {
@@ -110,6 +115,7 @@ export default {
     PlanSession,
     TedxNagoyau,
     PleaseSponsor,
+    PastSponsorSession,
     Contact
   },
 
