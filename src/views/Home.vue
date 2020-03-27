@@ -62,12 +62,13 @@
       <v-row>
         <v-col xs="11">
           <v-card>
-            <v-card-title>others</v-card-title>
+            <v-card-title>developers comments</v-card-title>
             <v-card-text>
               <ul>
                 <li>新歓ランディングページに使っているものは基本なんでもできます</li>
                 <li><a href="https://vuetifyjs.com/ja/components/cards/">このサイト</a>に載ってることなら基本なんでもできるよ</li>
                 <li>ひな形というにはお粗末だけど、とりあえず。3/19のうちに外に見せられる形にするね</li>
+                <li>github pages tests</li>
               </ul>
             </v-card-text>
           </v-card>
