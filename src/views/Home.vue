@@ -24,10 +24,8 @@
         <v-row align="center" justify="center">
           <v-col class="text-center" cols="12">
             <h1 class="display-1 font-weight-thin mb-4">Mission</h1>
-            <h4 class="subheading">Missionをここに書くよ。このフォントかっこいいね</h4>
-            <p>ちなみにフォントも無料のだったらいろいろ変えることができるよ</p>
-            <p>今背景に使っているのはマテリアルデザインといって、なんかモダンな雰囲気を感じるよね。</p>
-            <p></p>
+            <h4 class="subheading">ありたい姿に向かって挑戦し、ひとりひとりが楽しく生きる社会</h4>
+            <p>"should" (しなければならない) があふれる社会から、"want" があふれる社会へ。</p>
           </v-col>
         </v-row>
       </v-parallax>
@@ -38,10 +36,8 @@
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <h1 class="display-1 font-weight-thin mb-4">Vision</h1>
-          <!--<h4 class="subheading">Visionをここに書くよ！ちなみに</h4>-->
-          <p class="subheading">Visionをここに書くよ！ちなみに<br>改行したりいろいろ自由にできるよ<br><br>ご覧の通り、行間を空けることも</p>
-          <p style="color: #000000;">色を変えたりすることもできるぞ！</p>
-          <p>いろいろ指定してくれると嬉しいのだ！</p>
+          <h4 class="subheading">あらゆる人と人、アイデアとアイデアをつなげ、挑戦するに足る高いエネルギーを生み出す</h4>
+          <p class="subheading">新しいアイデアに触れ、様々な人と交流することで新たな自分を見つけ、一歩踏み出すエネルギーを創出する。</p>
         </v-col>
       </v-row>
     </v-parallax>
@@ -65,6 +61,7 @@
             <v-card-title>developers comments</v-card-title>
             <v-card-text>
               <ul>
+                <li>このセクション（developers comments ）は公開時には削除します）</li>
                 <li>新歓ランディングページに使っているものは基本なんでもできます</li>
                 <li><a href="https://vuetifyjs.com/ja/components/cards/">このサイト</a>に載ってることなら基本なんでもできるよ</li>
                 <li>ひな形というにはお粗末だけど、とりあえず。3/19のうちに外に見せられる形にするね</li>
@@ -78,26 +75,6 @@
 
     <Contact></Contact>
 
-    <!--<v-parallax :src="imgLink.missionView">
-      <v-container>
-        <v-row >
-          <v-col class="" xs="12" sm="6" md="4">
-            <v-card>
-              <v-img :src="imgLink.cardA" alt=""></v-img>
-              <v-card-title>画質改善。イベント紹介する？</v-card-title>
-              <v-card-text>これは複数の情報を一斉に見せるのに適していそうだね！具体的には協賛プランを表示したり、協賛のメリットを示すのに適しているのではないかな？</v-card-text>
-            </v-card>
-          </v-col>
-          <v-col class="" xs="12" sm="6" md="4">
-            <v-card>
-              <v-img :src="imgLink.cardA" alt=""></v-img>
-              <v-card-title>画質改善。イベント紹介する？</v-card-title>
-              <v-card-text>これは複数の情報を一斉に見せるのに適していそうだね！具体的には協賛プランを表示したり、協賛のメリットを示すのに適しているのではないかな？</v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-parallax>-->
   </div>
 
 </template>
