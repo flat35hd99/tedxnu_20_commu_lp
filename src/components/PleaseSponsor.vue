@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="/img/21.jpg" :height="parallaxHeight">
+  <v-parallax src="img/21.jpg" :height="parallaxHeight">
     <v-container>
       <v-row align="center">
         <v-col xs="12" class="text-center">
