@@ -30,8 +30,8 @@ export default {
   data: function () {
     return {
       imgLink: {
-        missionView: 'https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg',
-        visionView: "https://cdn.vuetifyjs.com/images/parallax/material.jpg",
+        missionView: 'img/25.jpg' ,
+        visionView: "img/23.jpg",
       }
     }
   }

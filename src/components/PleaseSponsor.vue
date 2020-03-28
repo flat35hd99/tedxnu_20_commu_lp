@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="https://pngimage.net/wp-content/uploads/2018/06/flat-background-png.png" :height="parallaxHeight">
+  <v-parallax src="/img/21.jpg" :height="parallaxHeight">
     <v-container>
       <v-row align="center">
         <v-col xs="12" class="text-center">
@@ -40,6 +40,17 @@ export default {
   methods: {
     handleResize: function() {
       this.width = window.innerWidth;
+      if (this.width < 400) {
+        this.parallaxHeight = 1100
+      }else if (this.width < 500 ) {
+        this.parallaxHeight = 1000
+      }else if (this.width < 599) {
+        this.parallaxHeight = 900
+      }else if (this.width < 800) {
+        this.parallaxHeight = 800
+      }else{
+        this.parallaxHeight = 500
+      }
     }
   },
   created: function () {
