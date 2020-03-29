@@ -4,7 +4,7 @@
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
           <h1 class="display-1 font-weight-thin mb-4">Mission</h1>
-          <h3 class="subheading">ありたい姿に向かって挑戦し、ひとりひとりが楽しく生きる社会</h3>
+          <h3 class="subheading">ありたい姿に向かって挑戦し、ひとりひとりが楽しく生きる社会の実現</h3>
           <p></p>
           <p style="line-height:2em">"should" (しなければならない) があふれる社会から、"want" (やりたい) があふれる社会へ。</p>
         </v-col>
