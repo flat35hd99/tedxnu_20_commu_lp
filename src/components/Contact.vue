@@ -24,7 +24,15 @@
 
 <script>
 export default {
-  name: 'Contact'
+  name: 'Contact',
+  data:function(){
+    return {
+      overlay: false
+    }
+  },
+  methods: {
+
+  }
 }
 </script>
 

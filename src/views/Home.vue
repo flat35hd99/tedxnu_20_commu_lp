@@ -5,12 +5,12 @@
         <v-layout column align-center justify-center class="white--text">
           <h1
               class="white--text mb-2 display-1 text-xs-center"
-            >キャッチコピー募集！
+            >協賛企業募集
           </h1>
           <div
               class="white--text subheading mb-3 text-xs-center"
               style="font-weight: 900; text-shadow: 2px 2px #000000; border-bottom: solid 2px red;"
-            >サブタイトルください！！背景もほしい！</div>
+            >理念に共感し、応援してくださる方々を探しています。</div>
         </v-layout>
       </v-parallax>
     </div>
@@ -45,8 +45,6 @@
                 <li>このセクション（developers comments ）は公開時には削除します）</li>
                 <li>新歓ランディングページに使っているものは基本なんでもできます</li>
                 <li><a href="https://vuetifyjs.com/ja/components/cards/">このサイト</a>に載ってることなら基本なんでもできるよ</li>
-                <li>ひな形というにはお粗末だけど、とりあえず。3/19のうちに外に見せられる形にするね</li>
-                <li>github pages tests</li>
               </ul>
             </v-card-text>
           </v-card>

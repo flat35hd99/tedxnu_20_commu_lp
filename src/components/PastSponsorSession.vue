@@ -3,11 +3,16 @@
     <v-row>
       <v-col>
         <v-card>
+          <v-img :src="imgLink.logoPartner"></v-img>
           <v-card-title>昨年度協賛企業様ご芳名</v-card-title>
-          <v-img :src="imgLink.pamphlet2019"></v-img>
           <v-card-text>
+            <span>通常の協賛</span>
             <ul>
-              <li v-for="item in sponsorList2019" :key="item.name">{{item.name}}</li>
+              <li v-for="item in sponsorList2019normal" :key="item.name">{{item.name}} 様</li>
+            </ul>
+            <span>物品協賛</span>
+            <ul>
+              <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
             </ul>
           </v-card-text>
         </v-card>
@@ -22,24 +27,50 @@ export default {
   data: function () {
     return {
       imgLink: {
-        pamphlet2019: ''
+        logoPartner: ''
       },
-      sponsorList2019: [
+      sponsorList2019normal: [
         {
-          name: '株式会社ジェイエスティー'
+          name: '大同特殊鋼株式会社'
         },
         {
-          name: 'サンプル会社'
+          name: '株式会社イエス'
         },
         {
-          name: 'エグザンプル株式会社'
+          name: 'アビームシステムズ株式会社'
         },
         {
-          name: '株式会社ホゲホゲ'
+          name: 'EF Education Firs'
         },
         {
-          name: '（株）hoge'
-        }
+          name: '株式会社キャディッシュ'
+        },
+        {
+          name: '中京テレビ放送株式会社'
+        },
+        {
+          name: '株式会社Harmony For'
+        },
+        {
+          name: '株式会社イノベスト'
+        },
+        {
+          name: '株式会社コーチング・システムズ'
+        },
+        {
+          name: '株式会社ジェイエスティ'
+        },
+      ],
+      sponsorList2019material: [
+        {
+          name: '株式会社シーマ'
+        },
+        {
+          name: 'Peatix Japan株式会社'
+        },
+        {
+          name: '磯田園製茶株式会社'
+        },
       ],
     }
   },
