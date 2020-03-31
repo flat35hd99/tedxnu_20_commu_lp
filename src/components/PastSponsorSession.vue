@@ -4,28 +4,30 @@
       <v-col>
         <v-card>
           <v-card-title>昨年度協賛企業様ご芳名</v-card-title>
-            <v-card-text>
-              <v-row justify="center">
-                <v-col cols="12" sm="7">
-                  <v-img :src="imgLink.logoPartner"></v-img>
-                </v-col>
-                <v-col cols="12" sm="5">
-                  <span>通常の協賛</span>
-                  <ul>
-                    <li v-for="item in sponsorList2019normal" :key="item.name">{{item.name}} 様</li>
-                  </ul>
-                  <span>物品協賛</span>
-                  <ul>
-                    <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
-                  </ul>
-                  <span>後援</span>
-                  <ul>
-                    <li>名古屋大学</li>
-                  </ul>
-                </v-col>
+          <v-card-text>
+            <v-row justify="center">
+              <v-col cols="12" sm="7">
+                <v-img :src="imgLink.logoPartner" alt="2019年パンフレット" @load="loaded()"></v-img>
+                <!--<v-skeleton-loader type="image" :loading="load">
 
-              </v-row>
-            </v-card-text>
+                </v-skeleton-loader>-->
+              </v-col>
+              <v-col cols="12" sm="5">
+                <span>通常の協賛</span>
+                <ul>
+                  <li v-for="item in sponsorList2019normal" :key="item.name">{{item.name}} 様</li>
+                </ul>
+                <span>物品協賛</span>
+                <ul>
+                  <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
+                </ul>
+                <span>後援</span>
+                <ul>
+                  <li>名古屋大学</li>
+                </ul>
+              </v-col>
+            </v-row>
+          </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -95,8 +97,15 @@ export default {
           name: '磯田園製茶株式会社'
         },
       ],
+      load: true,
     }
   },
+  methods: {
+    loaded: function() {
+      this.load = false
+      console.log(this.load);
+    }
+  }
 }
 </script>
 

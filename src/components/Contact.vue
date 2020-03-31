@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <v-card>
-          <v-card-title>Contact</v-card-title>
+          <v-card-title>Contact & Link</v-card-title>
           <v-card-text>
             <v-list>
               <v-list-item>
