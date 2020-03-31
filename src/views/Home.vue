@@ -39,7 +39,7 @@
       <v-row>
         <v-col xs="11">
           <v-card>
-            <v-card-title>developers comments</v-card-title>
+            <v-card-title>developer's comments</v-card-title>
             <v-card-text>
               <ul>
                 <li>このセクション（developers comments ）は公開時には削除します）</li>

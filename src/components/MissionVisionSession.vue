@@ -1,5 +1,7 @@
 <template>
   <div>
+
+    <h3>TEDxNagoyaU の理念</h3>
     <v-parallax :src="imgLink.missionView">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">

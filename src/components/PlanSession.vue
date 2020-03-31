@@ -2,17 +2,16 @@
   <v-container>
     <v-row><v-col>
       <h1 class="display-1 font-weight-thin mb-4">協賛プラン</h1>
+      <p>TEDxNagoyaUにご協賛いただくにあたり、いくつかのプランをご用意させていただきました。</p>
     </v-col></v-row>
     <v-row>
       <v-col v-for="item in planList" v-bind:key="item.title" xs="12" sm="6" md="4">
-
-          <v-card>
-            <v-img :src="item.img"></v-img>
-            <v-card-title>{{item.title}}</v-card-title>
-            <v-card-subtitle>{{item.price}}<span v-if="item.per"> / {{item.per}}</span></v-card-subtitle>
-            <v-card-text>{{item.desc}}</v-card-text>
-          </v-card>
-
+        <v-card>
+          <v-img :src="item.img"></v-img>
+          <v-card-title>{{item.title}}</v-card-title>
+          <v-card-subtitle>{{item.price}}<span v-if="item.per"> / {{item.per}}</span></v-card-subtitle>
+          <v-card-text>{{item.desc}}</v-card-text>
+        </v-card>
       </v-col>
     </v-row>
   </v-container>

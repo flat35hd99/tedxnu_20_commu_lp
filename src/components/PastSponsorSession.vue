@@ -18,6 +18,10 @@
                   <ul>
                     <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
                   </ul>
+                  <span>後援</span>
+                  <ul>
+                    <li>名古屋大学</li>
+                  </ul>
                 </v-col>
 
               </v-row>
@@ -34,7 +38,7 @@ export default {
   data: function () {
     return {
       imgLink: {
-        logoPartner: 'http://drive.google.com/uc?export=view&id=1fJ33ETohGNEcx97ti3HuEZJl1Dm_Pwbw'
+        logoPartner: 'http://drive.google.com/uc?export=view&id=1nuTaHZjBxvf1fAe6W1zbeWvrHW-g08Sk'
       },
       sponsorList2019normal: [
         {
