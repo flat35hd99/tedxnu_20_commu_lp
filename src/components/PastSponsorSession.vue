@@ -3,18 +3,25 @@
     <v-row>
       <v-col>
         <v-card>
-          <v-img :src="imgLink.logoPartner"></v-img>
           <v-card-title>昨年度協賛企業様ご芳名</v-card-title>
-          <v-card-text>
-            <span>通常の協賛</span>
-            <ul>
-              <li v-for="item in sponsorList2019normal" :key="item.name">{{item.name}} 様</li>
-            </ul>
-            <span>物品協賛</span>
-            <ul>
-              <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
-            </ul>
-          </v-card-text>
+            <v-card-text>
+              <v-row justify="center">
+                <v-col cols="12" sm="7">
+                  <v-img :src="imgLink.logoPartner"></v-img>
+                </v-col>
+                <v-col cols="12" sm="5">
+                  <span>通常の協賛</span>
+                  <ul>
+                    <li v-for="item in sponsorList2019normal" :key="item.name">{{item.name}} 様</li>
+                  </ul>
+                  <span>物品協賛</span>
+                  <ul>
+                    <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
+                  </ul>
+                </v-col>
+
+              </v-row>
+            </v-card-text>
         </v-card>
       </v-col>
     </v-row>
@@ -27,7 +34,7 @@ export default {
   data: function () {
     return {
       imgLink: {
-        logoPartner: ''
+        logoPartner: 'http://drive.google.com/uc?export=view&id=1fJ33ETohGNEcx97ti3HuEZJl1Dm_Pwbw'
       },
       sponsorList2019normal: [
         {
@@ -40,25 +47,37 @@ export default {
           name: 'アビームシステムズ株式会社'
         },
         {
-          name: 'EF Education Firs'
+          name: 'イー・エフ・エデュケーション・ファースト・ジャパン'
         },
         {
-          name: '株式会社キャディッシュ'
+          name: '青柳総本家'//30000
         },
         {
-          name: '中京テレビ放送株式会社'
+          name: 'サーラコーポレーション'
         },
         {
-          name: '株式会社Harmony For'
+          name: 'ソフトバリー'//30000
         },
         {
-          name: '株式会社イノベスト'
+          name: '株式会社キャディッシュ'//20000
         },
         {
-          name: '株式会社コーチング・システムズ'
+          name: '中京テレビ放送株式会社'//20000
         },
         {
-          name: '株式会社ジェイエスティ'
+          name: '東京海上日動'//20000
+        },
+        {
+          name: '株式会社Harmony For'//20000
+        },
+        {
+          name: '株式会社イノベスト'//20000
+        },
+        {
+          name: '株式会社コーチング・システムズ'//20000
+        },
+        {
+          name: '株式会社ジェイエスティ'//10000
         },
       ],
       sponsorList2019material: [
