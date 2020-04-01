@@ -40,13 +40,13 @@ export default {
         },
         {
           title: 'ブース出展',
-          img: 'https://live.staticflickr.com/65535/48218583016_d25eddc1d1_c.jpg',
+          img: 'https://live.staticflickr.com/1770/28473777837_bd1b3ea9d3_c.jpg',
           price: '3万円',
-          desc: '祇園精舍の鐘の声、諸行無常の響きあり。娑羅双樹の花の色、盛者必衰の理をあらはす。奢れる人も久しからず、ただ春の夜の夢のごとし。猛き者もつひにはほろびぬ、ひとへに風の前の塵に同じ。',
+          desc: 'TEDxNagoyaUのイベントが開催されている本会場とは別の場所で貴社のブースを出展することが可能です。スペースの大きさは長机2つ分ほどとなっております。（画像は株式会社青柳総本家様がブース出展をした際の様子です。）',
         },
         {
           title: 'パブリックビューイング参加枠',
-          img: 'https://live.staticflickr.com/65535/49596709966_9554ced148_c.jpg',
+          img: 'https://live.staticflickr.com/1781/43293189772_17f305dd61_c.jpg',
           price: '2万円',
           per: '1人あたり',
           desc: '祇園精舍の鐘の声、諸行無常の響きあり。娑羅双樹の花の色、盛者必衰の理をあらはす。奢れる人も久しからず、ただ春の夜の夢のごとし。猛き者もつひにはほろびぬ、ひとへに風の前の塵に同じ。',
@@ -74,6 +74,5 @@ export default {
   }
 }
 </script>
-
 <style lang="css" scoped>
 </style>

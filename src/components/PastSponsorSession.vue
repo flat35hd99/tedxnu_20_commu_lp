@@ -43,7 +43,7 @@ export default {
   data: function () {
     return {
       imgLink: {
-        logoPartner: 'http://drive.google.com/uc?export=view&id=1nuTaHZjBxvf1fAe6W1zbeWvrHW-g08Sk'
+        logoPartner: 'img/logoMatrix.jpg'
       },
       sponsorList2019normal: [
         {

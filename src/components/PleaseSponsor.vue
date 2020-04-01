@@ -1,5 +1,5 @@
 <template>
-  <v-parallax src="img/21.jpg" :height="parallaxHeight">
+  <v-parallax :src="imgLink.normalSize" :height="parallaxHeight">
     <v-container>
       <v-row align="center">
         <v-col xs="12" class="text-center">
@@ -26,7 +26,7 @@ export default {
       messageFromTeam: [
         {
           title: '協賛金の使途',
-          body: 'スピーカーさんの交通費や会場装飾、アフターパーティーの食事などに当てられます。これらの費用など、本番イベントを開催するには約100万円が必要です。'
+          body: 'スピーカーさんの交通費や会場装飾、アフターパーティーの食事などに当てられます。これらの費用など、本番イベントを開催するには約100万円が必要です。\n我々は学生のみで活動している団体なので、理念に共感してくださるサポーター企業様のお力添えが必要です。'
         },
         {
           title: '協賛していただくメリット',
@@ -41,29 +41,20 @@ export default {
           body: '協賛の形としては、ロゴ掲載、サンプリング配布、ブース出展、当日参加枠、パブリックビューイング参加枠、物品協賛がございます。各項目の詳細は下記に説明がございます。'
         }
       ],
-    }
-  },
-  methods: {
-    handleResize: function() {
-      this.width = window.innerWidth;
-      if (this.width < 400) {
-        this.parallaxHeight = 1100
-      }else if (this.width < 500 ) {
-        this.parallaxHeight = 1000
-      }else if (this.width < 599) {
-        this.parallaxHeight = 900
-      }else if (this.width < 800) {
-        this.parallaxHeight = 800
-      }else{
-        this.parallaxHeight = 500
+      imgLink: {
+        normalSize: 'img/21.jpg',
+        bigSize: 'img/21_big.jpg'
       }
     }
   },
+  methods: {
+
+  },
   created: function () {
-    if (this.width < 400) {
-      this.parallaxHeight = 1100
-    }else if (this.width < 500 ) {
-      this.parallaxHeight = 1000
+    this.width = window.innerWidth;
+    if (this.width < 500 ) {
+      this.parallaxHeight = 1200
+      this.imgLink.normalSize = this.imgLink.bigSize
     }else if (this.width < 599) {
       this.parallaxHeight = 900
     }else if (this.width < 800) {
