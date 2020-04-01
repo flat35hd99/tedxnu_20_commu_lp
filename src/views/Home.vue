@@ -35,23 +35,6 @@
       <past-sponsor-session></past-sponsor-session>
     </div>
 
-    <v-container>
-      <v-row>
-        <v-col xs="11">
-          <v-card>
-            <v-card-title>developer's comments</v-card-title>
-            <v-card-text>
-              <ul>
-                <li>このセクション（developers comments ）は公開時には削除します）</li>
-                <li>新歓ランディングページに使っているものは基本なんでもできます</li>
-                <li><a href="https://vuetifyjs.com/ja/components/cards/">このサイト</a>に載ってることなら基本なんでもできるよ</li>
-              </ul>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container>
-
     <Contact></Contact>
 
   </div>
