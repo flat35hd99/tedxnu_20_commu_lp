@@ -91,6 +91,17 @@ export default {
         cardC: "https://live.staticflickr.com/65535/48247052991_d905b95448_c.jpg",
       }
     }
+  },
+  mounted: function () {
+    const title = '協賛のお願い | TEDxNagoyaU'
+    const description = 'TEDxNagoyaUは名古屋大学でTEDxイベントを運営する学生のみで構成されたイベント運営団体です。'
+    document.title = title
+    document.querySelector("meta[property='og:title']")
+      .setAttribute('content', title)
+    document.querySelector("meta[name='description']")
+      .setAttribute('content', description)
+    document.querySelector("meta[property='og:description']")
+      .setAttribute('content', description)
   }
 }
 </script>

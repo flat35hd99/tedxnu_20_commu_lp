@@ -8,9 +8,12 @@
             <v-row justify="center">
               <v-col cols="12" sm="7">
                 <v-img :src="imgLink.logoPartner" alt="2019年パンフレット" @load="loaded()"></v-img>
-                <!--<v-skeleton-loader type="image" :loading="load">
+                <!--
+                {{loading}}
+                <v-skeleton-loader type="image" :loading="loading">
 
-                </v-skeleton-loader>-->
+                </v-skeleton-loader>
+              -->
               </v-col>
               <v-col cols="12" sm="5">
                 <span>通常の協賛</span>
@@ -84,7 +87,7 @@ export default {
         },
         {
           name: '株式会社ジェイエスティ'//10000
-        },
+        }
       ],
       sponsorList2019material: [
         {
@@ -96,14 +99,21 @@ export default {
         {
           name: '磯田園製茶株式会社'
         },
+        {
+          name: '株式会社 エス・ピー・プラネット'
+        },
+        {
+          name: 'レッドブル・ジャパン株式会社'
+        }
       ],
-      load: true,
+      loading: true,
     }
   },
   methods: {
-    loaded: function() {
-      this.load = false
-      console.log(this.load);
+    loaded: function () {
+      console.log(this.loading);
+      this.loading = false
+      console.log(this.loading);
     }
   }
 }
