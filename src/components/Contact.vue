@@ -12,6 +12,7 @@
                 </v-list-item-icon>
                 <v-list-item-content>
                   <v-list-item-title>info[at]tedxnagoyau.com</v-list-item-title>
+                  <v-list-item-sub-title>[at]を@にしてご連絡ください。</v-list-item-sub-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
