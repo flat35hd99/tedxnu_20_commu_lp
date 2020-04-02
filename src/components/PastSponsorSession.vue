@@ -16,11 +16,11 @@
               -->
               </v-col>
               <v-col cols="12" sm="5">
-                <span>通常の協賛</span>
+                <span>Partners</span>
                 <ul>
                   <li v-for="item in sponsorList2019normal" :key="item.name">{{item.name}} 様</li>
                 </ul>
-                <span>物品協賛</span>
+                <span>Inkind Partners</span>
                 <ul>
                   <li v-for="item in sponsorList2019material" :key="item.name">{{item.name}} 様</li>
                 </ul>
