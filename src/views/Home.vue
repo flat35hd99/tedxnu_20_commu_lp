@@ -1,18 +1,7 @@
 <template>
   <div class="">
-    <div class="">
-      <v-parallax :src="imgLink.firstView" height="600">
-        <v-layout column align-center justify-center class="white--text">
-          <h1
-              class="white--text mb-2 display-1 text-xs-center"
-            >協賛企業募集
-          </h1>
-          <div
-              class="white--text subheading mb-3 text-xs-center"
-              style="font-weight: 900; text-shadow: 2px 2px #000000; border-bottom: solid 2px red;"
-            >理念に共感し、応援してくださる方々を探しています。</div>
-        </v-layout>
-      </v-parallax>
+    <div>
+      <the-first-view></the-first-view>
     </div>
 
     <div class="">
@@ -43,6 +32,7 @@
 
 <script>
 // @ is an alias to /src
+import TheFirstView from '@/components/TheFirstView.vue'
 import MissionVisionSession from '@/components/MissionVisionSession.vue'
 import PlanSession from '@/components/PlanSession.vue'
 import TedxNagoyau from '@/components/TedxNagoyau.vue'
@@ -53,6 +43,7 @@ import Contact from '@/components/Contact.vue'
 export default {
   name: 'Home',
   components: {
+    TheFirstView,
     MissionVisionSession,
     PlanSession,
     TedxNagoyau,

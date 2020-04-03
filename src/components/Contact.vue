@@ -6,13 +6,13 @@
           <v-card-title>Contact & Link</v-card-title>
           <v-card-text>
             <v-list>
-              <v-list-item>
+              <v-list-item v-for="item in addressList" :key="item.title">
                 <v-list-item-icon>
-                  <v-icon>mdi-email</v-icon>
+                  <v-icon>{{item.icon}}</v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-list-item-title>info[at]tedxnagoyau.com</v-list-item-title>
-                  <v-list-item-sub-title>[at]を@にしてご連絡ください。</v-list-item-sub-title>
+                  <v-list-item-title>{{item.title}}</v-list-item-title>
+                  <v-list-item-sub-title>{{item.subTitle}}</v-list-item-sub-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
@@ -28,7 +28,14 @@ export default {
   name: 'Contact',
   data:function(){
     return {
-      overlay: false
+      overlay: false,
+      addressList: [
+        {
+          title: 'info[at]tedxnagoyau.com',
+          icon: 'mdi-email',
+          subTitle: '[at]を@にしてご連絡ください。'
+        }
+      ]
     }
   },
   methods: {
