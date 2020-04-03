@@ -32,7 +32,7 @@
 
 <script>
 // @ is an alias to /src
-import TheFirstView from '@/components/TheFirstView.vue' 
+import TheFirstView from '@/components/TheFirstView.vue'
 import MissionVisionSession from '@/components/MissionVisionSession.vue'
 import PlanSession from '@/components/PlanSession.vue'
 import TedxNagoyau from '@/components/TedxNagoyau.vue'
