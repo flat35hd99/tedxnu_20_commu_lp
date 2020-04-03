@@ -1,11 +1,11 @@
-name: github pages
+name: deploy sakura server
 env:
-  DEPLOY_DESTINATION: /tedxnu_20_commu_lp/
+  DEPLOY_DESTINATION: /partner-lp/
 
 on:
   push:
     branches:
-      - development
+      - master
 
 jobs:
   build-deploy:
@@ -32,8 +32,10 @@ jobs:
     - name: build
       run: npm run build
 
-    - name: deploy
-      uses: peaceiris/actions-gh-pages@v3
+    - name: ftp-deploy
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
       with:
-        personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        publish_dir: ./docs
+        ftp-server: ${{secrets.SERVER_DIRECTORY}}
+        ftp-user: ${{secrets.SERVER_USER_NAME}}
+        ftp-password: ${{secrets.SERVER_USER_PASSWORD}}
+        local-dir: ./docs
