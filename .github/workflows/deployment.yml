@@ -1,4 +1,4 @@
-name: deploy sakura server 
+name: deploy sakura server
 env:
   DEPLOY_DESTINATION: /partner-lp/
 
