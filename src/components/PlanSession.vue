@@ -6,7 +6,7 @@
     </v-col></v-row>
     <v-row>
       <v-col v-for="item in planList" v-bind:key="item.title" xs="12" sm="6" md="4">
-        <v-card>
+        <v-card height="100%">
           <v-img :src="item.img"></v-img>
           <v-card-title>{{item.title}}</v-card-title>
           <v-card-subtitle>{{item.price}}<span v-if="item.per"> / {{item.per}}</span></v-card-subtitle>
