@@ -1,5 +1,6 @@
 <template>
-  <div class="">
+  <div>
+
     <div>
       <the-first-view></the-first-view>
     </div>
@@ -24,7 +25,10 @@
       <past-sponsor-session></past-sponsor-session>
     </div>
 
-    <Contact></Contact>
+    <div>
+      <Contact></Contact>
+    </div>
+
 
   </div>
 
