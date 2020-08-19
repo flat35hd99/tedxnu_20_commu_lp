@@ -1,4 +1,4 @@
-const deploy_destination = process.env.DEPLOY_DESTINATION ? process.env.DEPLOY_DESTINATION : ''
+const deploy_destination = process.env.DEPLOY_DESTINATION ? process.env.DEPLOY_DESTINATION : './'
 //  '/partner-lp/', '/tedxnu_20_commu_lp/'
 
 module.exports = {
