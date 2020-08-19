@@ -1,4 +1,5 @@
 # tedxnu_20_coomu_lp
+*NOTE* Use node 11.* instead of 12.0
 
 ## Project setup
 ```
