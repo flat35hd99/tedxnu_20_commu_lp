@@ -11,7 +11,7 @@
                   <v-icon>{{item.icon}}</v-icon>
                 </v-list-item-icon>
                 <v-list-item-content>
-                  <v-list-item-title>{{item.title}}</v-list-item-title>
+                  <v-list-item-title><a :href="item.link">{{ item.title }}</a></v-list-item-title>
                   <v-list-item-sub-title>{{item.subTitle}}</v-list-item-sub-title>
                 </v-list-item-content>
               </v-list-item>
@@ -32,8 +32,19 @@ export default {
       addressList: [
         {
           title: 'info[at]tedxnagoyau.com',
+          link: 'mail:info[at]tedxngoyau.com',
           icon: 'mdi-email',
           subTitle: '[at]を@にしてご連絡ください。'
+        },
+        {
+          title: 'TEDxNagoyaUホームページ',
+          link: '/',
+          icon: 'mdi-home',
+        },
+        {
+          title: 'イベントページ',
+          link: '/event',
+          icon: 'mdi-ship-wheel'
         }
       ]
     }
